@@ -56,7 +56,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(MainActivity.this, "Meu carrinho de compras", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.alunos:
-                Toast.makeText(MainActivity.this, "Alunos", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ActivityPadrao.class);
+                startActivity(intent);
                 break;
             default:
                 return true;
